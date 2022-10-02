@@ -46,12 +46,15 @@ body > main > section.section.pt-6.pt-md-8.pt-lg-6.pb-3.bg-green.text-white.over
     position: absolute !important;
     margin: 0 0 0 0;
     top: 0;
+    min-width: 100% !important;
+    min-height: 100vh;
 }
 #video-bg video {
     top: 0;
     left: 0;
     width: 100%;
-    height: auto;
+    height: 100vh;
+    object-fit: cover;
 }
 #video-bg {
     position: relative;
@@ -72,6 +75,26 @@ body > main > section.section.pt-6.pt-md-8.pt-lg-6.pb-3.bg-green.text-white.over
 #navbar_global > div > div > div.col-6.collapse-brand > a > img {
     width: 80px;
     height: auto;
+}
+body > main > section.section-header.pb-7.pb-lg-11.bg-soft.qrmenufy > div.container > div > div.col-12.col-md-5.order-1.order-lg-2 {
+    margin: 0 0 100px 0;
+}
+#counts {
+    padding: 90px 0 220px 0 !important;
+}
+#wavePattern {
+    background: url('../../img/wave.svg') no-repeat center/cover;
+    height: 150px !important;
+    min-width: 100% !important;
+    position: absolute;
+    top: -130px;
+    transform: rotate(180deg);
+}
+
+@media (max-width: 1023px) {
+    #navbar-main > div > a > img.navbar-brand-dark.common {
+        display: none;
+    }
 }
 
 @media (min-width: 280px) { 
@@ -161,5 +184,26 @@ body > main > section.section.pt-6.pt-md-8.pt-lg-6.pb-3.bg-green.text-white.over
     }
     #navbar_global > ul > li > a {
         color: #fff;
+    }
+    body > main > footer > div > div:nth-child(1) {
+        align-items: center;
+    }
+    body > main > footer > div > div:nth-child(1) > div:nth-child(2) {
+        padding: 0 0 0 70px;
+    }
+    body > main > footer > div > div:nth-child(1) > div:nth-child(3) {
+        padding: 0 0 0 70px;
+    }
+}
+
+@media (min-width: 1600px) { 
+    body > main > section.section-header.pb-7.pb-lg-11.bg-soft.qrmenufy > div.container > div > div.col-12.col-md-5.order-1.order-lg-2 {
+        margin: 0 0 300px 0;
+    }
+}
+
+@media (min-width: 1900px) { 
+    body > main > section.section-header.pb-7.pb-lg-11.bg-soft.qrmenufy > div.container > div > div.col-12.col-md-5.order-1.order-lg-2 {
+        margin: 0 0 500px 0;
     }
 }
